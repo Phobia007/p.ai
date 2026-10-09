@@ -38,9 +38,11 @@ The site supports light and dark appearance. The persistent account control open
 
 Downloads intentionally show unavailable notices. The imported authentication code supports email/password; other unconfigured sign-in choices retain their notices. Live authentication needs separate acceptance with a real account. Its browser configuration contains a public project URL and publishable key, not server credentials.
 
-## Cloudflare connection (next step)
+## Cloudflare publishing
 
-This repository upload does not connect or deploy Cloudflare. The included Wrangler configuration preserves the existing Worker identity `preacherman-ai`, `dist/` output, and `preacherman.ai` / `www.preacherman.ai` custom domains for a later authorized switch.
+On 2026-10-09, the owner connected this repository to the existing Cloudflare Worker `preacherman-ai`. The dashboard confirms the production branch, root directory and commands below. Pushing `main` triggers a production build and deployment; the connection alone does not deploy an existing commit. This documentation commit triggers the first build from the new repository.
+
+The Wrangler configuration preserves `dist/` output and the existing `preacherman.ai` / `www.preacherman.ai` custom domains. Monitor the commit's Cloudflare status and the live domain to confirm a release; a successful Git push alone is not a deployment result.
 
 | Setting | Value |
 | --- | --- |
