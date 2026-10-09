@@ -1,0 +1,160 @@
+:root {
+  --appearance-ink: #514459;
+  --appearance-muted: #756c76;
+  --appearance-border: #827483;
+  --appearance-focus: #685174;
+  --appearance-hover: rgba(81, 68, 89, .08);
+  --appearance-error: #963d38;
+  --off-white: #38313e;
+  --off-black: #eee5d2;
+  --gray: #645765;
+  --dark-gray: #5a4c60;
+  --color-secondary: #655f67;
+  --surface: #ddd4c3;
+  color-scheme: light;
+}
+:root[data-appearance="dark"] {
+  --appearance-ink: #e5e1d8;
+  --appearance-muted: #b2b0ad;
+  --appearance-border: #73716c;
+  --appearance-focus: #eee2c9;
+  --appearance-hover: rgba(238, 226, 201, .10);
+  --appearance-error: #f0aaa2;
+  --off-white: #e5e1d8;
+  --off-black: #141414;
+  --gray: #b2b0ad;
+  --dark-gray: #73716c;
+  --color-secondary: #b6b6b2;
+  --surface: #262626;
+  color-scheme: dark;
+}
+html[data-appearance="dark"]:has(.hero-anchor) {
+  --off-white: #e5e1d8;
+  --off-black: #141414;
+  --gray: #b2b0ad;
+  --dark-gray: #73716c;
+}
+html[data-appearance] .loader { color: var(--appearance-ink); }
+html[data-appearance]:has(.hero-anchor) .links a:not(.is-active) { color: var(--appearance-muted); }
+html[data-appearance]:has(.hero-anchor) .cta-btn { border-color: var(--appearance-border); }
+html[data-appearance] :focus-visible { outline-color: var(--appearance-focus); }
+html[data-appearance] .masked-panel__nav-fade { background: linear-gradient(180deg, var(--off-black), transparent); }
+html[data-appearance="dark"]:has(.hero-anchor) .hero-inner h1 { color: #77746e; }
+html[data-appearance="dark"] #preman-title-deboss feFlood[result="cavity-floor-color"] { flood-color: #77746e; }
+html[data-appearance="dark"] #preman-title-deboss feFlood[result="dark-inner-color"] { flood-color: #111110; flood-opacity: .65; }
+html[data-appearance="dark"] #preman-title-deboss feFlood[result="light-inner-color"] { flood-color: #aaa69c; flood-opacity: .5; }
+html[data-appearance="dark"] #preman-title-deboss feFlood[result="occlusion-color"] { flood-color: #090909; flood-opacity: .32; }
+
+/* Original Preacherman sun/moon artwork and motion, in the vacated utility slot. */
+.appearance-toggle {
+  appearance: none;
+  position: fixed;
+  z-index: 120;
+  top: max(1.5rem, env(safe-area-inset-top));
+  right: max(2.25vw, env(safe-area-inset-right));
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  border: 0;
+  border-radius: 50%;
+  color: var(--appearance-ink);
+  background: transparent;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+.appearance-toggle:hover { background-color: var(--appearance-hover); }
+.appearance-toggle:focus-visible { outline: 1px solid var(--appearance-focus); outline-offset: 3px; }
+.appearance-toggle__icon {
+  position: absolute;
+  inset: 10px;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  transition: opacity 260ms ease, transform 360ms cubic-bezier(.22, 1, .36, 1);
+}
+.appearance-toggle__icon--sun { opacity: 1; transform: rotate(0) scale(1); }
+.appearance-toggle__icon--moon { opacity: 0; transform: rotate(-24deg) scale(.72); }
+[data-appearance="dark"] .appearance-toggle__icon--sun { opacity: 0; transform: rotate(28deg) scale(.72); }
+[data-appearance="dark"] .appearance-toggle__icon--moon { opacity: 1; transform: rotate(0) scale(1); }
+@media (max-width: 1000px) {
+  .nav .menu-toggle-reveal { margin-left: auto; }
+  .appearance-toggle { top: max(1.25rem, env(safe-area-inset-top)); right: calc(max(2.5vw, 1.5rem) + 90px); }
+  html[data-scene-stage="intro"] .appearance-toggle { right: max(2.5vw, env(safe-area-inset-right)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .appearance-toggle, .appearance-toggle__icon { transition: none; }
+}
+
+/* Clear foreground typography over the shared frosted content backdrop. */
+html[data-appearance="light"][data-content-glass="true"] {
+  --off-white: #25212b;
+  --gray: #3c3542;
+  --color-secondary: #3c3542;
+  --appearance-ink: #25212b;
+  --appearance-muted: #3c3542;
+  --appearance-border: #786f79;
+  --content-glass-rule: rgba(48, 43, 53, .19);
+  --content-glass-hover: rgba(255, 251, 242, .16);
+}
+html[data-appearance="dark"][data-content-glass="true"] {
+  --off-white: #e5e1d8;
+  --gray: #bcb8b0;
+  --color-secondary: #bcb8b0;
+  --appearance-ink: #e5e1d8;
+  --appearance-muted: #bcb8b0;
+  --appearance-border: #88837a;
+  --content-glass-rule: rgba(229, 225, 216, .17);
+  --content-glass-hover: rgba(229, 225, 216, .055);
+}
+html[data-content-glass="true"] .works .row { border-color: var(--content-glass-rule); }
+html[data-content-glass="true"] .works .row:focus-within { background: var(--content-glass-hover); }
+/* Row glow extends beyond the grid; keep it from creating sideways scrolling. */
+html[data-content-glass="true"] .page:has(.works) { overflow-x: clip; }
+html[data-content-glass="true"] .links a { color: var(--appearance-ink); opacity: 1; }
+html[data-content-glass="true"] .links a:not(.is-active) { color: var(--appearance-muted); }
+@media (hover: hover) {
+  html[data-content-glass="true"] .works:hover .row:not(:hover) { opacity: 1; }
+  html[data-content-glass="true"] .works .row:hover { background: var(--content-glass-hover); }
+}
+/* The fullscreen player's close button occupies the normal utility corner. */
+html:has(.reel-modal) .appearance-toggle {
+  z-index: 210;
+  right: calc(max(2.25vw, env(safe-area-inset-right)) + 8rem);
+}
+
+/* Marker introductions sit on the original dark vignette in both modes. */
+:root {
+  --project-preview-ink: #fff9ed;
+  --project-preview-muted: #e8dfd0;
+  --project-preview-surface: #28242b;
+  --project-preview-shadow: rgba(15, 12, 18, .60);
+}
+:root[data-appearance="dark"] {
+  --project-preview-ink: #f7f1e5;
+  --project-preview-muted: #d8d2c7;
+  --project-preview-surface: #19191a;
+  --project-preview-shadow: rgba(0, 0, 0, .65);
+}
+html[data-appearance] .project-bar {
+  --off-white: var(--project-preview-ink);
+  --off-black: var(--project-preview-surface);
+  --gray: var(--project-preview-muted);
+  color: var(--project-preview-ink);
+  text-shadow: 0 1px 8px var(--project-preview-shadow);
+}
+html[data-appearance] .project-bar__client {
+  color: var(--project-preview-muted);
+  opacity: 1;
+}
+html[data-appearance] .project-bar__link {
+  color: var(--project-preview-ink);
+}
+html[data-appearance] .project-bar__link:focus-visible {
+  outline-color: var(--project-preview-ink);
+}
+
+/* Five-item navigation */
+@media(min-width:1001px){.links[data-v-49656d0b]{gap:clamp(1.1rem,2.6vw,3.5rem);white-space:nowrap}}

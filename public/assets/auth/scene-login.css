@@ -1,0 +1,123 @@
+/* Appearance tokens follow the scene's existing light/dark switch. */
+#preacherman-account {
+  --page-bg: #f7f5f1;
+  --ink: #38313e;
+  --ink-rgb: 56,49,62;
+  --hairline: rgba(56,49,62,.3);
+  --account-success: #315f3b;
+  --account-icon-filter: none;
+  --account-shadow: 0 16px 48px rgba(26,20,32,.2);
+  --account-edge: calc((100% - var(--grid-max-width, 95%))/2);
+  --account-bottom: var(--chrome-bottom);
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.4;
+}
+html[data-appearance="dark"] #preacherman-account {
+  --page-bg: #10100f;
+  --ink: #f2efe8;
+  --ink-rgb: 242,239,232;
+  --hairline: rgba(242,239,232,.25);
+  --account-success: #a4d1aa;
+  --account-icon-filter: invert(1);
+  --account-shadow: 0 16px 48px rgba(0,0,0,.4);
+}
+#preacherman-account *, #preacherman-account *::before, #preacherman-account *::after { box-sizing: border-box; }
+#preacherman-account button, #preacherman-account input { font-family: inherit; }
+#preacherman-account .site-utility-button--login {
+  position: fixed;
+  z-index: 1001;
+  bottom: var(--account-bottom);
+  right: var(--account-edge);
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: auto;
+  min-width: 0;
+  height: 2.375rem;
+  padding: .875rem 1rem;
+  margin: 0;
+  background: transparent;
+  color: var(--off-white);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  isolation: isolate;
+  cursor: pointer;
+  opacity: 1;
+  pointer-events: auto;
+  font-size: .5rem;
+  line-height: inherit;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+  transition: color .3s ease;
+}
+#preacherman-account .site-utility-button--login:is(:hover,[aria-expanded="true"]) {
+  background: transparent;
+  box-shadow: none;
+}
+#preacherman-account .btn-toggle__icon {
+  position: relative;
+  flex-shrink: 0;
+  width: .5625rem;
+  height: .4375rem;
+}
+#preacherman-account .btn-toggle__icon svg {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#preacherman-account .btn-toggle__text {
+  margin-left: 0;
+  margin-right: 0;
+  transition: max-width .6s var(--expo-out),opacity .3s linear .2s,margin-right .6s var(--expo-out);
+}
+@media(hover:hover) {
+  #preacherman-account .btn-toggle:hover .btn-toggle__text { margin-right: 1.3125rem; max-width: var(--text-width,20rem); opacity: 1; }
+}
+#preacherman-account .btn-toggle:focus-visible .btn-toggle__text { margin-right: 1.3125rem; max-width: var(--text-width,20rem); opacity: 1; }
+
+#preacherman-account img { filter: var(--account-icon-filter); }
+#preacherman-account .site-login-panel {
+  z-index: 1002;
+  top: auto;
+  bottom: calc(var(--account-bottom) + 2.375rem + 12px);
+  right: var(--account-edge);
+  width: min(400px,calc(100vw - 32px));
+  max-height: calc(100dvh - var(--account-bottom) - 80px);
+  padding: 27px;
+  border: 1px solid var(--hairline);
+  box-shadow: var(--account-shadow);
+  scrollbar-width: thin;
+  scrollbar-color: var(--appearance-muted) var(--page-bg);
+  touch-action: pan-y;
+  transform: translateY(8px);
+}
+#preacherman-account .site-login-panel.is-open { transform: translateY(0); }
+#preacherman-account .login-form__field>label { font-size: 13px; }
+#preacherman-account .login-form__input-shell { height: 47px; box-shadow: none; }
+#preacherman-account .login-form__input { font-size: 13px; }
+#preacherman-account .login-form__input::placeholder { color: rgba(var(--ink-rgb),.55); }
+#preacherman-account .login-form__input-icon { width: 16px; height: 16px; }
+#preacherman-account .login-form__text-action { color: rgba(var(--ink-rgb),.78); }
+#preacherman-account .login-form__text-action:hover { color: var(--ink); }
+#preacherman-account .login-form__submit, #preacherman-account .login-form__social { height: 47px; box-shadow: none; }
+#preacherman-account .login-form__social:hover { background: var(--appearance-hover); }
+#preacherman-account .login-form__prompt { flex-wrap: wrap; overflow-wrap: anywhere; }
+#preacherman-account .login-form__status, #preacherman-account .login-scan__status,
+#preacherman-account .login-scan__eyebrow { color: var(--appearance-muted); }
+#preacherman-account .login-form__status[data-kind="error"] { color: var(--appearance-error); }
+#preacherman-account .login-form__status[data-kind="success"] { color: var(--account-success); }
+#preacherman-account .login-scan__tabs { background: var(--appearance-hover); }
+#preacherman-account .login-scan__tabs button { color: var(--appearance-muted); }
+#preacherman-account .login-scan__tabs button[aria-selected="true"] { color: var(--ink); }
+#preacherman-account .login-scan__code { background: var(--page-bg); box-shadow: none; }
+#preacherman-account .login-form__get-code:hover { color: var(--appearance-muted); }
+#preacherman-account :focus-visible { outline: 2px solid var(--appearance-focus); outline-offset: 3px; }
+#preacherman-account .login-form__input:focus-visible { outline: none; }
+#preacherman-account .login-form__input-shell:focus-within { border-color: var(--appearance-focus); box-shadow: 0 0 0 1px var(--appearance-focus); }
+#preacherman-account [hidden] { display: none !important; }
+@media(prefers-reduced-motion:reduce) { #preacherman-account * { transition: none; } }

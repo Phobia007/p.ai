@@ -1,0 +1,27 @@
+.scroll-entry-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: var(--off-white);
+  pointer-events: none;
+}
+.scroll-entry-arrow {
+  position: relative;
+  display: block;
+  width: 1px;
+  height: 1.25rem;
+  background: currentColor;
+  opacity: .55;
+}
+.scroll-entry-arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -3px;
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: rotate(45deg);
+}

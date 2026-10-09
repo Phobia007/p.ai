@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Overworld Serif SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./noto-serif-sc-0.woff2) format('truetype');
+}
+@font-face {
+  font-family: 'Overworld Serif SC';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./noto-serif-sc-1.woff2) format('truetype');
+}
+
+@font-face {
+  font-family: 'Overworld Sans SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./noto-sans-sc-0.woff2) format('truetype');
+}
+@font-face {
+  font-family: 'Overworld Sans SC';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./noto-sans-sc-1.woff2) format('truetype');
+}
+

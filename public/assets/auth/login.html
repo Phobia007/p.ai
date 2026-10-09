@@ -1,0 +1,110 @@
+<div id="preacherman-account"><button data-v-51239ddf class="site-utility-button site-utility-button--login btn-toggle ts-b" type="button" aria-label="Log in" aria-expanded="false" aria-controls="site-login-panel" aria-haspopup="dialog" style="--cloud-x:100%"><svg data-v-51239ddf class="btn-toggle__border" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="account-noise" x="0" y="0" width="300" height="300" patternUnits="userSpaceOnUse"><image href="/textures/grain-bg.webp" width="300" height="300"/></pattern></defs><rect data-v-51239ddf x="0.5" y="0.5" width="40" height="37" rx="3.5" ry="3.5" fill="none" stroke="url(#account-noise)" stroke-width="1" opacity="0.75"/></svg><svg data-v-51239ddf class="btn-toggle__hover" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="account-noise-hover" x="0" y="0" width="300" height="300" patternUnits="userSpaceOnUse"><image href="/textures/grain-bg.webp" width="300" height="300"/></pattern></defs><rect data-v-51239ddf x="0.5" y="0.5" width="40" height="37" rx="3.5" ry="3.5" fill="none" stroke="url(#account-noise-hover)" stroke-width="1" opacity="0.75"/></svg><span data-v-51239ddf class="btn-toggle__icon"><svg data-v-51239ddf aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <path
+    fill="currentColor"
+    d="M227.46 214c-16.52-28.56-43-48.06-73.68-55.09a68 68 0 1 0-51.56 0c-30.64 7-57.16 26.53-73.68 55.09a4 4 0 0 0 6.92 4C55 184.19 89.62 164 128 164s73 20.19 92.54 54a4 4 0 0 0 3.46 2a3.93 3.93 0 0 0 2-.54a4 4 0 0 0 1.46-5.46M68 96a60 60 0 1 1 60 60a60.07 60.07 0 0 1-60-60"
+  />
+</svg>
+</span><span data-v-51239ddf class="btn-toggle__text">Log in</span></button><div
+        id="site-login-panel"
+        class="site-login-panel"
+        role="dialog"
+        aria-label="Sign in"
+        data-i18n-aria-label="signInDialog"
+        aria-hidden="true"
+        inert
+      >
+        <form class="login-form" novalidate>
+          <div class="login-form__field">
+            <label for="login-email" data-i18n="email">Email</label>
+            <div class="login-form__input-shell">
+              <i class="login-form__input-icon" data-lucide="at-sign" aria-hidden="true"></i>
+              <input
+                id="login-email"
+                class="login-form__input"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="Enter your Email"
+                data-i18n-placeholder="emailPlaceholder"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="login-form__field">
+            <label for="login-password" data-i18n="password">Password</label>
+            <div class="login-form__input-shell">
+              <i
+                class="login-form__input-icon"
+                data-lucide="lock-keyhole"
+                aria-hidden="true"
+              ></i>
+              <input
+                id="login-password"
+                class="login-form__input"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Enter your Password"
+                data-i18n-placeholder="passwordPlaceholder"
+                required
+              />
+              <button
+                class="login-form__visibility"
+                type="button"
+                aria-label="Show password"
+              >
+                <i data-login-icon="show" data-lucide="eye" aria-hidden="true"></i>
+                <i
+                  data-login-icon="hide"
+                  data-lucide="eye-off"
+                  aria-hidden="true"
+                  hidden
+                ></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="login-form__options">
+            <label class="login-form__remember">
+              <input type="checkbox" name="remember" />
+              <span data-i18n="rememberMe">Stay signed in</span>
+            </label>
+            <button class="login-form__text-action" type="button" data-i18n="forgotPassword">
+              Forgot password?
+            </button>
+          </div>
+
+          <button class="login-form__submit" type="submit" data-i18n="signIn">
+            Sign In
+          </button>
+
+          <p class="login-form__prompt">
+            <span data-i18n="noAccount">Don't have an account?</span>
+            <button class="login-form__text-action" type="button" data-i18n="signUp">
+              Sign Up
+            </button>
+          </p>
+
+          <p class="login-form__divider" data-i18n="orWith">Or With</p>
+
+          <div class="login-form__socials">
+            <button class="login-form__social" type="button">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xMiAxMWg4LjUzM3EuMDY2LjU3OC4wNjcgMS4xODRjMCAyLjczNC0uOTggNS4wMzYtMi42NzggNi42Yy0xLjQ4NSAxLjM3MS0zLjUxOCAyLjE3NS01Ljk0MiAyLjE3NUE4Ljk3NiA4Ljk3NiAwIDAgMSAzIDExLjk4QTguOTc2IDguOTc2IDAgMCAxIDExLjk4IDNjMi40MiAwIDQuNDUzLjg5IDYuMDA4IDIuMzM5TDE2LjUyNiA2LjhDMTUuMzY4IDUuNjgxIDEzLjgwMyA1IDEyIDVhNyA3IDAgMCAwIDAgMTRjMy41MjcgMCA2LjE0NC0yLjYwOCA2LjU3Ny02SDEyeiIvPgo8L3N2Zz4K" alt="" aria-hidden="true" />
+              <span>Google</span>
+            </button>
+            <button class="login-form__social" type="button" data-login-provider="github">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xMiAuMjk3QzUuMzcgLjI5NyAwIDUuNjcgMCAxMi4yOTdjMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1LjYuMTEzLjgyLS4yNTguODItLjU3NyAwLS4yODUtLjAxLTEuMDQtLjAxNS0yLjA0LTMuMzM4LjcyNC00LjA0My0xLjYxLTQuMDQzLTEuNjEtLjU0Ni0xLjM4Ny0xLjMzMy0xLjc1Ni0xLjMzMy0xLjc1Ni0xLjA5LS43NDUuMDgzLS43MjkuMDgzLS43MjkgMS4yMDUuMDg0IDEuODM4IDEuMjM3IDEuODM4IDEuMjM3IDEuMDcgMS44MzUgMi44MDkgMS4zMDUgMy40OTUuOTk4LjEwOC0uNzc2LjQxOC0xLjMwNS43NjItMS42MDUtMi42NjUtLjMtNS40NjYtMS4zMzQtNS40NjYtNS45MzEgMC0xLjMxLjQ2NS0yLjM4MSAxLjIzNS0zLjIyMS0uMTM1LS4zMDMtLjU0LTEuNTIzLjEwNS0zLjE3NiAwIDAgMS4wMDUtLjMyMiAzLjMgMS4yM2ExMS41IDExLjUgMCAwIDEgMy0uNDA0YzEuMDIuMDA1IDIuMDQ1LjEzOCAzIC40MDQgMi4yOC0xLjU1MiAzLjI4NS0xLjIzIDMuMjg1LTEuMjMuNjQ1IDEuNjUzLjI0IDIuODczLjEyIDMuMTc2Ljc2NS44NCAxLjIzIDEuOTExIDEuMjMgMy4yMjEgMCA0LjYwOS0yLjgwNSA1LjYyNS01LjQ3NSA1LjkyMS40Mi4zNi44MSAxLjA5Ni44MSAyLjIyIDAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2IDAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=" alt="" aria-hidden="true" />
+              <span>GitHub</span>
+            </button>
+            <button class="login-form__social" type="button" data-login-provider="apple">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xNy4wNSAyMC4yOGMtLjk4Ljk1LTIuMDUuOC0zLjA4LjM1LTEuMDktLjQ2LTIuMDktLjQ4LTMuMjQgMC0xLjQ0LjYyLTIuMi40NC0zLjA2LS4zNUMyLjc5IDE1LjI1IDMuNTEgNy41OSA5LjA1IDcuMzFjMS4zNS4wNyAyLjI5Ljc2IDMuMDguODIgMS4xOC0uMjQgMi4zMS0uOTQgMy41Ny0uODUgMS41MS4xMiAyLjY1LjcyIDMuNCAxLjgtMy4xMiAxLjg3LTIuMzggNS45OC40OCA3LjEzLS41NyAxLjUtMS4zMSAyLjk5LTIuNTQgNC4wOGwuMDEtLjAxWk0xMi4wMyA3LjI1QzExLjg4IDUuMDIgMTMuNjkgMy4xOCAxNS43NyAzYy4yOSAyLjU4LTIuMzQgNC41LTMuNzQgNC4yNVoiLz48L3N2Zz4=" alt="" aria-hidden="true" />
+              <span data-i18n="appleLoginProvider">Apple</span>
+            </button>
+            <button class="login-form__social" type="button" data-login-provider="codex">
+              <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjE3NiAxNzYgMzY0IDM2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUwOC43NDkgMzE3LjM5OUM1MTYuNzc3IDI4Ny4zMTQgNTA4Ljk5MSAyNTMuODg0IDQ4NS4zODkgMjMwLjI4MkM0NjEuNzg4IDIwNi42ODEgNDI4LjM2IDE5OC44OTUgMzk4LjI3MyAyMDYuOTIzQzM3Ni4yMzEgMTg0LjkyOCAzNDMuMzkgMTc0Ljk1NiAzMTEuMTQ4IDE4My41OTZDMjc4LjkwNiAxOTIuMjM0IDI1NS40NSAyMTcuMjkyIDI0Ny4zNiAyNDcuMzYxQzIxNy4yOTEgMjU1LjQ1MSAxOTIuMjMzIDI3OC45MSAxODMuNTk1IDMxMS4xNDlDMTc0Ljk1NyAzNDMuMzkxIDE4NC45MjcgMzc2LjIzMiAyMDYuOTI0IDM5OC4yNzRDMTk4Ljg5NiA0MjguMzU5IDIwNi42ODMgNDYxLjc4OSAyMzAuMjg0IDQ4NS4zOTFDMjUzLjg4NSA1MDguOTkyIDI4Ny4zMTMgNTE2Ljc3OSAzMTcuNDAxIDUwOC43NUMzMzkuNDQyIDUzMC43NDUgMzcyLjI4NiA1NDAuNzE3IDQwNC41MjUgNTMyLjA3OUM0MzYuNzY3IDUyMy40NDEgNDYwLjIyMyA0OTguMzg0IDQ2OC4zMTMgNDY4LjMxNUM0OTguMzgzIDQ2MC4yMjQgNTIzLjQ0IDQzNi43NjYgNTMyLjA3OCA0MDQuNTI2QzU0MC43MTYgMzcyLjI4NSA1MzAuNzQ3IDMzOS40NDMgNTA4Ljc0OSAzMTcuNDAyVjMxNy4zOTlaTTQ3MC44OTkgMjQ0Ljc3NkM0ODYuODkyIDI2MC43NyA0OTMuNDg4IDI4Mi42MDEgNDkwLjY4NyAzMDMuNDEyTDQxNS41NzcgMjYwLjA0NkM0MTIuNDExIDI1OC4yMTggNDA4LjUwOSAyNTguMjE4IDQwNS4zNDUgMjYwLjA0NkwzMTcuNDAxIDMxMC44MlYyNzcuNTI2QzMxNy40MDEgMjc1LjE5MSAzMTguNjUyIDI3My4wMDUgMzIwLjY3NiAyNzEuODM3TDM4Ny42NDQgMjMzLjE3NEM0MTQuMTc4IDIxOC4zNTMgNDQ4LjM0NiAyMjIuMjIzIDQ3MC45MDEgMjQ0Ljc3Nkg0NzAuODk5Wk0zNTcuODM3IDMxMS4xNDRMMzk4LjI3NSAzMzQuNDkxVjM4MS4xODVMMzU3LjgzNyA0MDQuNTMyTDMxNy4zOTggMzgxLjE4NVYzMzQuNDkxTDM1Ny44MzcgMzExLjE0NFpNMjY0Ljc3NiAyNjkuNjkzQzI2NS4yMDcgMjM5LjMwNSAyODUuNjQ0IDIxMS42NDkgMzE2LjQ1MyAyMDMuMzkzQzMzOC4zIDE5Ny41NCAzNjAuNTA1IDIwMi43NDQgMzc3LjEyNyAyMTUuNTczTDMwMi4wMTQgMjU4LjkzN0MyOTguODQ4IDI2MC43NjQgMjk2Ljg5OCAyNjQuMTQ0IDI5Ni44OTggMjY3Ljc5OFYzNjkuMzQ2TDI2OC4wNjUgMzUyLjY5OUMyNjYuMDQzIDM1MS41MzEgMjY0Ljc3NiAzNDkuMzUzIDI2NC43NzYgMzQ3LjAxN1YyNjkuNjkxVjI2OS42OTNaTTIwMy4zOTEgMzE2LjQ1NEMyMDkuMjQ0IDI5NC42MDggMjI0Ljg1NCAyNzcuOTc4IDI0NC4yNzYgMjY5Ljk5OVYzNTYuNzNDMjQ0LjI3NiAzNjAuMzg0IDI0Ni4yMjYgMzYzLjc2MyAyNDkuMzkyIDM2NS41OTFMMzM3LjMzNyA0MTYuMzY1TDMwOC41MDMgNDMzLjAxM0MzMDYuNDgxIDQzNC4xODEgMzAzLjk2MSA0MzQuMTg4IDMwMS45MzkgNDMzLjAyTDIzNC45NzEgMzk0LjM1N0MyMDguODY4IDM3OC43ODkgMTk1LjEzOCAzNDcuMjYxIDIwMy4zOTEgMzE2LjQ1NFpNMjQ0Ljc3NSA0NzAuOUMyMjguNzgxIDQ1NC45MDYgMjIyLjE4NiA0MzMuMDc1IDIyNC45ODYgNDEyLjI2NEwzMDAuMDk2IDQ1NS42M0MzMDMuMjYzIDQ1Ny40NTcgMzA3LjE2NCA0NTcuNDU3IDMxMC4zMjggNDU1LjYzTDM5OC4yNzMgNDA0Ljg1NlY0MzguMTQ5QzM5OC4yNzMgNDQwLjQ4NSAzOTcuMDIyIDQ0Mi42NzEgMzk0Ljk5NyA0NDMuODM5TDMyOC4wMjkgNDgyLjUwMkMzMDEuNDk1IDQ5Ny4zMjIgMjY3LjMyNyA0OTMuNDUyIDI0NC43NzIgNDcwLjlIMjQ0Ljc3NVpNNDUwLjg5NyA0NDUuOTgyQzQ1MC40NjYgNDc2LjM3MSA0MzAuMDI5IDUwNC4wMjcgMzk5LjIyIDUxMi4yODNDMzc3LjM3MyA1MTguMTM2IDM1NS4xNjggNTEyLjkzMiAzMzguNTQ3IDUwMC4xMDJMNDEzLjY1OSA0NTYuNzM4QzQxNi44MjYgNDU0LjkxMSA0MTguNzc1IDQ1MS41MzIgNDE4Ljc3NSA0NDcuODc3VjM0Ni4zMjlMNDQ3LjYwOSAzNjIuOTc3QzQ0OS42MzEgMzY0LjE0NSA0NTAuODk3IDM2Ni4zMjMgNDUwLjg5NyAzNjguNjU5VjQ0NS45ODVWNDQ1Ljk4MlpNNTEyLjI4MiAzOTkuMjIxQzUwNi40MjkgNDIxLjA2OCA0OTAuODE5IDQzNy42OTcgNDcxLjM5NyA0NDUuNjc2VjM1OC45NDZDNDcxLjM5NyAzNTUuMjkyIDQ2OS40NDggMzUxLjkxMiA0NjYuMjgxIDM1MC4wODVMMzc4LjMzNiAyOTkuMzExTDQwNy4xNyAyODIuNjYzQzQwOS4xOTIgMjgxLjQ5NSA0MTEuNzEyIDI4MS40ODcgNDEzLjczNCAyODIuNjU1TDQ4MC43MDIgMzIxLjMxOEM1MDYuODA1IDMzNi44ODcgNTIwLjUzNiAzNjguNDE1IDUxMi4yODIgMzk5LjIyMVoiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPg==" alt="" aria-hidden="true" />
+              <span>Codex</span>
+            </button>
+          </div>
+        </form>
+      </div></div>

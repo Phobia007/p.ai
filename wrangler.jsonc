@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "preacherman-ai",
+  "compatibility_date": "2026-09-17",
+  "workers_dev": false,
+  "preview_urls": false,
+  "assets": { "directory": "./dist" },
+  "routes": [
+    { "pattern": "preacherman.ai", "custom_domain": true },
+    { "pattern": "www.preacherman.ai", "custom_domain": true }
+  ]
+}

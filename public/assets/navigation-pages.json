@@ -1,0 +1,53 @@
+[
+  {
+    "slug": "vision",
+    "title": "Vision",
+    "heading": "A new way to be present.",
+    "intro": "Our vision for Preacherman is a digital world shaped by presence, individuality and connection. Six pillars guide what we are building.",
+    "section": "Six pillars",
+    "items": [
+      {
+        "title": "Presence",
+        "text": "A digital presence you can see, hear and interact with."
+      },
+      {
+        "title": "Identity",
+        "text": "A distinct character with a personality and a sense of self."
+      },
+      {
+        "title": "Continuity",
+        "text": "Memories and shared experiences that carry from one encounter to the next."
+      },
+      {
+        "title": "Autonomy",
+        "text": "The ability to understand goals and act independently, within the permissions you choose."
+      },
+      {
+        "title": "Expression",
+        "text": "Digital identities that give you new ways to express yourself."
+      },
+      {
+        "title": "Connection",
+        "text": "A shared gallery where friends can discover the avatars and moments you choose to post."
+      }
+    ]
+  },
+  {
+    "slug": "accessories",
+    "title": "Accessories",
+    "heading": "Make it your own.",
+    "intro": "Accessories for your digital world. More details are coming soon."
+  },
+  {
+    "slug": "get-app",
+    "title": "Get Preacherman",
+    "heading": "Find and Build a Second You Here.",
+    "intro": "Find and Build a Second You Here. Get Preacherman for Windows, macOS or the web."
+  },
+  {
+    "slug": "whitepaper",
+    "title": "Whitepaper",
+    "heading": "The thinking behind Preacherman.",
+    "intro": "The Preacherman whitepaper will be available here."
+  }
+]

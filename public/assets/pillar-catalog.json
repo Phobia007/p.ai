@@ -1,0 +1,685 @@
+{
+  "version": 2,
+  "description": "Independent copies for the six homepage light pillars. Avatar data stays in its existing catalog.",
+  "pillars": [
+    {
+      "key": "alekon",
+      "sourceProjectId": "e4cac8e9-ae98-4638-8115-8af7401febf6",
+      "preview": {
+        "_id": "e4cac8e9-ae98-4638-8115-8af7401febf6",
+        "client": "",
+        "coverImage": {
+          "asset": {
+            "_id": "image-6d7117f7a107d3a620309c8a9371d36754510ee5-1024x1024-png",
+            "url": "https://cdn.sanity.io/images/ejdvlx0v/production/6d7117f7a107d3a620309c8a9371d36754510ee5-1024x1024.png"
+          },
+          "local": {
+            "widths": {
+              "1024": "/cms/6d7117f7a107d3a620309c8a9371d36754510ee5-w1024q75.webp"
+            }
+          }
+        },
+        "hidden": null,
+        "slug": {
+          "_type": "slug",
+          "current": "alekon"
+        },
+        "tagline": "Complete audio package. Original score, sound design, etc.",
+        "title": "Presence",
+        "pillarKey": "presence",
+        "pillarDescription": "ZIMA silhouette, traced by light."
+      },
+      "detail": {
+        "_id": "pillar:e4cac8e9-ae98-4638-8115-8af7401febf6",
+        "bannerImage": {
+          "_type": "image",
+          "asset": {
+            "_ref": "image-4f96daf8d48d9c2111485c527f6e00309295ee74-1920x1080-png",
+            "_type": "reference"
+          },
+          "local": {
+            "widths": {
+              "800": "/cms/4f96daf8d48d9c2111485c527f6e00309295ee74-w800q80.webp",
+              "1200": "/cms/4f96daf8d48d9c2111485c527f6e00309295ee74-w1200q80.webp",
+              "1600": "/cms/4f96daf8d48d9c2111485c527f6e00309295ee74-w1600q80.webp",
+              "2200": "/cms/4f96daf8d48d9c2111485c527f6e00309295ee74-w1920q80.webp"
+            },
+            "og": "/cms/4f96daf8d48d9c2111485c527f6e00309295ee74-og.jpg"
+          }
+        },
+        "client": "The Alekon Company",
+        "content": [
+          {
+            "_key": "125fa24ee3f9",
+            "_type": "blockColumns",
+            "align": "center",
+            "columns": [
+              {
+                "_key": "33f470457dbe",
+                "_type": "column",
+                "text": "Original soundtrack, available on Steam and Spotify",
+                "title": "Music"
+              },
+              {
+                "_key": "09d6e3d64a13",
+                "_type": "column",
+                "text": "Creatures, photo mechanics, five realms of ambience, UI, minigames",
+                "title": "Sound Design"
+              },
+              {
+                "_key": "094469a912ca",
+                "_type": "column",
+                "text": "Surface effects, music systems, music minigames, etc.",
+                "title": "Audio Systems"
+              },
+              {
+                "_key": "7119a897b1f8",
+                "_type": "column",
+                "text": "All trailers",
+                "title": "Promotional"
+              }
+            ]
+          },
+          {
+            "_key": "0e627e8ea9fb",
+            "_type": "blockVideo",
+            "caption": "Audio Reel for Alekon",
+            "provider": "vimeo",
+            "url": "https://vimeo.com/1218382487"
+          }
+        ],
+        "coverImage": {
+          "_type": "image",
+          "asset": {
+            "_ref": "image-6d7117f7a107d3a620309c8a9371d36754510ee5-1024x1024-png",
+            "_type": "reference"
+          },
+          "local": {
+            "widths": {
+              "800": "/cms/6d7117f7a107d3a620309c8a9371d36754510ee5-w800q80.webp",
+              "1024": "/cms/6d7117f7a107d3a620309c8a9371d36754510ee5-w1024q80.webp",
+              "1200": "/cms/6d7117f7a107d3a620309c8a9371d36754510ee5-w1024q80.webp",
+              "1600": "/cms/6d7117f7a107d3a620309c8a9371d36754510ee5-w1024q80.webp",
+              "2200": "/cms/6d7117f7a107d3a620309c8a9371d36754510ee5-w1024q80.webp"
+            },
+            "og": "/cms/6d7117f7a107d3a620309c8a9371d36754510ee5-og.jpg"
+          }
+        },
+        "description": "A first-person photography game about capturing whimsical creatures called fictions.",
+        "featured": null,
+        "hidden": true,
+        "order": null,
+        "role": [
+          "Audio Direction",
+          "Game Design",
+          "Music",
+          "Sound Design"
+        ],
+        "seo": null,
+        "slug": {
+          "_type": "slug",
+          "current": "alekon"
+        },
+        "tagline": "Complete audio package. Original score, sound design, etc.",
+        "title": "Alekon",
+        "year": "2021"
+      }
+    },
+    {
+      "key": "multiversus",
+      "sourceProjectId": "7752fb62-de0d-4112-907c-395cb7ac3098",
+      "preview": {
+        "_id": "7752fb62-de0d-4112-907c-395cb7ac3098",
+        "client": "",
+        "coverImage": {
+          "asset": {
+            "_id": "image-2c8f8124abcdf3e32e5285db52edccb818ddfb89-800x800-jpg",
+            "url": "https://cdn.sanity.io/images/ejdvlx0v/production/2c8f8124abcdf3e32e5285db52edccb818ddfb89-800x800.jpg"
+          },
+          "local": {
+            "widths": {
+              "1024": "/cms/2c8f8124abcdf3e32e5285db52edccb818ddfb89-w800q75.webp"
+            }
+          }
+        },
+        "hidden": null,
+        "slug": {
+          "_type": "slug",
+          "current": "multiversus"
+        },
+        "tagline": "Audio for one of 2024's biggest free-to-play launches.",
+        "title": "Identity",
+        "pillarKey": "identity",
+        "pillarDescription": "An identity carried in a tilted nameplate."
+      },
+      "detail": {
+        "_id": "pillar:7752fb62-de0d-4112-907c-395cb7ac3098",
+        "bannerImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-780517f32dc531b83d0d384e860b42a2e8264c1c88355523a5b5cea5dcc40b10-683x683-webp"
+          },
+          "local": {
+            "widths": {
+              "683": "/assets/avatars/magik.webp"
+            },
+            "og": "/assets/avatars/magik.webp"
+          }
+        },
+        "client": "Marvel Characters, Inc.",
+        "content": [
+          {
+            "_key": "e3ab73fb2729",
+            "_type": "blockColumns",
+            "align": "center",
+            "columns": [
+              {
+                "_key": "79e63998aba3",
+                "_type": "column",
+                "text": "Orchestral scores of IP classics along with a variety of mix systems that prioritize local player audio feedback.",
+                "title": "Audio Direction"
+              },
+              {
+                "_key": "ae7a72af3daf",
+                "_type": "column",
+                "text": "Foley, impacts, maps, skins, UI, & mix for the launch trailer along with additional sound design",
+                "title": "Sound Design"
+              },
+              {
+                "_key": "4f4640343661",
+                "_type": "column",
+                "text": "Style direction, original tracks, adaptive system, orchestral sessions, licensing",
+                "title": "Music"
+              },
+              {
+                "_key": "8240417015a7",
+                "_type": "column",
+                "text": "All audio systems, gameplay prioritization, contextual VO system",
+                "title": "Audio System Design"
+              }
+            ]
+          },
+          {
+            "_key": "fb201dedff16",
+            "_type": "blockVideo",
+            "caption": "Provided mix, additional sound design, and touch ups for this launch cinematic.",
+            "provider": "vimeo",
+            "url": "https://vimeo.com/710461129"
+          }
+        ],
+        "coverImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-780517f32dc531b83d0d384e860b42a2e8264c1c88355523a5b5cea5dcc40b10-683x683-webp"
+          },
+          "local": {
+            "widths": {
+              "683": "/assets/avatars/magik.webp"
+            },
+            "og": "/assets/avatars/magik.webp"
+          }
+        },
+        "description": "A free-to-play platform fighter pulling characters from across the WB catalog.",
+        "featured": null,
+        "hidden": false,
+        "order": null,
+        "role": [
+          "Audio Direction",
+          "Audio System Design",
+          "Sound Design",
+          "Additional Music"
+        ],
+        "seo": null,
+        "slug": {
+          "_type": "slug",
+          "current": "multiversus"
+        },
+        "tagline": "Audio for one of 2024's biggest free-to-play launches.",
+        "title": "Magik",
+        "year": "1975"
+      }
+    },
+    {
+      "key": "star-wars-survivor",
+      "sourceProjectId": "95555063-0ff5-40df-aa74-b71e55671b89",
+      "preview": {
+        "_id": "95555063-0ff5-40df-aa74-b71e55671b89",
+        "client": "",
+        "coverImage": {
+          "asset": {
+            "_id": "image-a8b548c83f9b60e09737caa091bd98128f829fdc-1045x970-jpg",
+            "url": "https://cdn.sanity.io/images/ejdvlx0v/production/a8b548c83f9b60e09737caa091bd98128f829fdc-1045x970.jpg"
+          },
+          "local": {
+            "widths": {
+              "1024": "/cms/a8b548c83f9b60e09737caa091bd98128f829fdc-w1024q75.webp"
+            }
+          }
+        },
+        "hidden": null,
+        "slug": {
+          "_type": "slug",
+          "current": "star-wars-survivor"
+        },
+        "tagline": "Built upon Fallen Order's audio foundation.",
+        "title": "Continuity",
+        "pillarKey": "continuity",
+        "pillarDescription": "Months, years, and a continuous flow of time."
+      },
+      "detail": {
+        "_id": "pillar:95555063-0ff5-40df-aa74-b71e55671b89",
+        "bannerImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-9bab6bec853ec5969f29df231363fb4eefb994959b9f4d995b0faebd890b24a5-700x700-webp"
+          },
+          "local": {
+            "widths": {
+              "700": "/assets/avatars/noble-six.webp"
+            },
+            "og": "/assets/avatars/noble-six.webp"
+          }
+        },
+        "client": "Microsoft",
+        "content": [
+          {
+            "_key": "df211d78c8d7",
+            "_type": "blockColumns",
+            "align": "center",
+            "columns": [
+              {
+                "_key": "95eeeea8d664",
+                "_type": "column",
+                "text": "New force abilities and sync kills\nEight enemy combat NPCs",
+                "title": "Sound Design"
+              },
+              {
+                "_key": "6f60d7b51e79",
+                "_type": "column",
+                "text": "Coruscant ambience and cutscenes\nZN-A4 Narrative AI\nSpeeder bike event building blocks",
+                "title": "World Building"
+              }
+            ]
+          },
+          {
+            "_key": "0956cd5d8ccf",
+            "_type": "blockVideo",
+            "caption": "Audio reel for Star Wars Jedi: Survivor",
+            "provider": "vimeo",
+            "url": "https://vimeo.com/1137866868",
+            "width": "full"
+          }
+        ],
+        "coverImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-9bab6bec853ec5969f29df231363fb4eefb994959b9f4d995b0faebd890b24a5-700x700-webp"
+          },
+          "local": {
+            "widths": {
+              "700": "/assets/avatars/noble-six.webp"
+            },
+            "og": "/assets/avatars/noble-six.webp"
+          }
+        },
+        "description": "The sequel to Fallen Order, following Cal Kestis across the galaxy.",
+        "featured": null,
+        "hidden": false,
+        "order": null,
+        "role": [
+          "Sound Design",
+          "Implementation"
+        ],
+        "seo": null,
+        "slug": {
+          "_type": "slug",
+          "current": "star-wars-survivor"
+        },
+        "tagline": "Built upon Fallen Order's audio foundation.",
+        "title": "Noble Six / SPARTAN-B312",
+        "year": "2010"
+      }
+    },
+    {
+      "key": "omega-strikers",
+      "sourceProjectId": "0e47410e-247f-43a3-a6b3-1a43a5b44a49",
+      "preview": {
+        "_id": "0e47410e-247f-43a3-a6b3-1a43a5b44a49",
+        "client": "",
+        "coverImage": {
+          "asset": {
+            "_id": "image-67f48c1a239385a496f75350b21d927c6b6f5fd6-1000x1333-jpg",
+            "url": "https://cdn.sanity.io/images/ejdvlx0v/production/67f48c1a239385a496f75350b21d927c6b6f5fd6-1000x1333.jpg"
+          },
+          "local": {
+            "widths": {
+              "1024": "/cms/67f48c1a239385a496f75350b21d927c6b6f5fd6-w1000q75.webp"
+            }
+          }
+        },
+        "hidden": null,
+        "slug": {
+          "_type": "slug",
+          "current": "omega-strikers"
+        },
+        "tagline": "A distinctive anime styled soundscape for a speedy competitive game.",
+        "title": "Autonomy",
+        "pillarKey": "autonomy",
+        "pillarDescription": "A body acting under its own drive."
+      },
+      "detail": {
+        "_id": "pillar:0e47410e-247f-43a3-a6b3-1a43a5b44a49",
+        "bannerImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-0a5c5a217db2532dad6886075ad2828c5c67fabef46374b2010aae791aa9532a-767x767-webp"
+          },
+          "local": {
+            "widths": {
+              "767": "/assets/avatars/pathfinder.webp"
+            },
+            "og": "/assets/avatars/pathfinder.webp"
+          }
+        },
+        "client": "Electronic Arts",
+        "content": [
+          {
+            "_key": "849bea6647b5",
+            "_type": "blockColumns",
+            "align": "center",
+            "columns": [
+              {
+                "_key": "fb6124514b3b",
+                "_type": "column",
+                "text": "Abilities, foley, movement, the ball and its impact variations, UI",
+                "title": "Sound Design"
+              },
+              {
+                "_key": "adacf6fb6cbd",
+                "_type": "column",
+                "text": "Four original tracks, curated the rest through outsourced electronic artists",
+                "title": "Music"
+              },
+              {
+                "_key": "45aa83b2d918",
+                "_type": "column",
+                "text": "Local, enemy, and remote mix system for competitive clarity, systemic skin overrides, cross-platform optimization",
+                "title": "Implementation"
+              },
+              {
+                "_key": "07790024fc82",
+                "_type": "column",
+                "text": "Casting and recording with ihearyou, all dialogue mixed and implemented",
+                "title": "Voice"
+              }
+            ]
+          },
+          {
+            "_key": "b7bac984fa25",
+            "_type": "blockVideo",
+            "caption": "Handled all sound design, VO editing, and select music.",
+            "provider": "vimeo",
+            "url": "https://vimeo.com/1210829743"
+          }
+        ],
+        "coverImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-0a5c5a217db2532dad6886075ad2828c5c67fabef46374b2010aae791aa9532a-767x767-webp"
+          },
+          "local": {
+            "widths": {
+              "767": "/assets/avatars/pathfinder.webp"
+            },
+            "og": "/assets/avatars/pathfinder.webp"
+          }
+        },
+        "description": "A three-on-three fusion sports game with an anime-inspired look.",
+        "featured": null,
+        "hidden": false,
+        "order": null,
+        "role": [
+          "Audio Direction",
+          "Technical Sound Design",
+          "Sound Design",
+          "Additional Music",
+          "Voice"
+        ],
+        "seo": null,
+        "slug": {
+          "_type": "slug",
+          "current": "omega-strikers"
+        },
+        "tagline": "A distinctive anime styled soundscape for a speedy competitive game.",
+        "title": "Pathfinder",
+        "year": "2019"
+      }
+    },
+    {
+      "key": "retail-mage",
+      "sourceProjectId": "646a3639-9bc5-455a-8100-71068215aa04",
+      "preview": {
+        "_id": "646a3639-9bc5-455a-8100-71068215aa04",
+        "client": "",
+        "coverImage": {
+          "asset": {
+            "_id": "image-3dc2ce31e997b92b2fca8449f71657919f1b3139-480x640-jpg",
+            "url": "https://cdn.sanity.io/images/ejdvlx0v/production/3dc2ce31e997b92b2fca8449f71657919f1b3139-480x640.jpg"
+          },
+          "local": {
+            "widths": {
+              "1024": "/cms/3dc2ce31e997b92b2fca8449f71657919f1b3139-w480q75.webp"
+            }
+          }
+        },
+        "hidden": null,
+        "slug": {
+          "_type": "slug",
+          "current": "retail-mage"
+        },
+        "tagline": "All audio except music for a generative AI game, built in Unreal.",
+        "title": "Expression",
+        "pillarKey": "expression",
+        "pillarDescription": "Voice, text, and movement in one changing form."
+      },
+      "detail": {
+        "_id": "pillar:646a3639-9bc5-455a-8100-71068215aa04",
+        "bannerImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-02f596d554f67f56099049ed11ac0a2d2ebe30180ffc86ace64d95f4e53dafd0-518x800-jpg"
+          },
+          "local": {
+            "widths": {
+              "518": "/assets/avatars/kitana.jpg"
+            },
+            "og": "/assets/avatars/kitana.jpg"
+          }
+        },
+        "client": "Warner Bros. Entertainment",
+        "content": [
+          {
+            "_key": "c0a86706969e",
+            "_type": "blockColumns",
+            "align": "center",
+            "columns": [
+              {
+                "_key": "271c20b7db47",
+                "_type": "column",
+                "text": "Full coverage across the game",
+                "title": "Sound Design"
+              },
+              {
+                "_key": "d17ba4d37d80",
+                "_type": "column",
+                "text": "All audio systems built natively using Meta Sound, and designed for unpredictable outcomes",
+                "title": "Implementation"
+              },
+              {
+                "_key": "58771cf639d9",
+                "_type": "column",
+                "text": "All music and music systems implemented",
+                "title": "Music"
+              },
+              {
+                "_key": "fb0411984d03",
+                "_type": "column",
+                "text": "Mix, VO casting, and Sound Design",
+                "title": "Release Trailer"
+              }
+            ]
+          },
+          {
+            "_key": "f2f8a9c5e8c2",
+            "_type": "blockVideo",
+            "caption": "Handled all sound design, mix, and music implementation for the game Retail Mage.",
+            "provider": "vimeo",
+            "url": "https://vimeo.com/1212678107"
+          }
+        ],
+        "coverImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-02f596d554f67f56099049ed11ac0a2d2ebe30180ffc86ace64d95f4e53dafd0-518x800-jpg"
+          },
+          "local": {
+            "widths": {
+              "518": "/assets/avatars/kitana.jpg"
+            },
+            "og": "/assets/avatars/kitana.jpg"
+          }
+        },
+        "description": "A co-op job sim where players work as wizards in a magical furniture store, powered by generative AI.",
+        "featured": null,
+        "hidden": false,
+        "order": null,
+        "role": [
+          "Audio Direction",
+          "Sound Design",
+          "Implementation",
+          "Trailer Audio"
+        ],
+        "seo": null,
+        "slug": {
+          "_type": "slug",
+          "current": "retail-mage"
+        },
+        "tagline": "All audio except music for a generative AI game, built in Unreal.",
+        "title": "Kitana",
+        "year": "1993"
+      }
+    },
+    {
+      "key": "unrooted",
+      "sourceProjectId": "d840348f-d460-417e-a188-9b3602463f51",
+      "preview": {
+        "_id": "d840348f-d460-417e-a188-9b3602463f51",
+        "client": "",
+        "coverImage": {
+          "asset": {
+            "_id": "image-11a625163796cff0a4d99059819de90df7e46fe3-2048x2048-jpg",
+            "url": "https://cdn.sanity.io/images/ejdvlx0v/production/11a625163796cff0a4d99059819de90df7e46fe3-2048x2048.jpg"
+          },
+          "local": {
+            "widths": {
+              "1024": "/cms/11a625163796cff0a4d99059819de90df7e46fe3-w1024q75.webp"
+            }
+          }
+        },
+        "hidden": null,
+        "slug": {
+          "_type": "slug",
+          "current": "unrooted"
+        },
+        "tagline": "Complete audio and original soundtrack for an indie platformer.",
+        "title": "Connection",
+        "pillarKey": "connection",
+        "pillarDescription": "A point growing into a connected plane."
+      },
+      "detail": {
+        "_id": "pillar:d840348f-d460-417e-a188-9b3602463f51",
+        "bannerImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-3cd15c62f0e4741880cbfe70d659239279642d57bba34ac4570be2a69b83e926-1532x1458-png"
+          },
+          "local": {
+            "widths": {
+              "1532": "/assets/avatars/2b.png"
+            },
+            "og": "/assets/avatars/2b.png"
+          }
+        },
+        "client": "Square Enix",
+        "content": [
+          {
+            "_key": "2490123ccb52",
+            "_type": "blockColumns",
+            "align": "center",
+            "columns": [
+              {
+                "_key": "9a3a34003d0a",
+                "_type": "column",
+                "text": "A beautifully inspiring and calming soundtrack made to offset the frustration of such a challenging game",
+                "title": "Music"
+              },
+              {
+                "_key": "2906067b339b",
+                "_type": "column",
+                "text": "Sounds for the game including abilities, foley & UI",
+                "title": "Sound Design"
+              }
+            ]
+          },
+          {
+            "_key": "7a7b94c8dd1e",
+            "_type": "blockVideo",
+            "caption": "Release trailer for Unrooted",
+            "provider": "vimeo",
+            "url": "https://vimeo.com/1220196931"
+          }
+        ],
+        "coverImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-3cd15c62f0e4741880cbfe70d659239279642d57bba34ac4570be2a69b83e926-1532x1458-png"
+          },
+          "local": {
+            "widths": {
+              "1532": "/assets/avatars/2b.png"
+            },
+            "og": "/assets/avatars/2b.png"
+          }
+        },
+        "description": "A hand-painted precision platformer where one missed jump costs hours.",
+        "featured": null,
+        "hidden": false,
+        "order": null,
+        "role": [
+          "Audio Direction",
+          "Music",
+          "Sound Design",
+          "Implementation"
+        ],
+        "seo": null,
+        "slug": {
+          "_type": "slug",
+          "current": "unrooted"
+        },
+        "tagline": "Complete audio and original soundtrack for an indie platformer.",
+        "title": "2B",
+        "year": "2017"
+      }
+    }
+  ]
+}

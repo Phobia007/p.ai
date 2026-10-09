@@ -1,0 +1,23 @@
+/* Exact local font confirmed by the user: ClashDisplay-Light.ttf. */
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("fonts/ClashDisplay-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+:root {
+  --brand-font: "ClashDisplay", sans-serif;
+  --font-serif: var(--brand-font) !important;
+  --font-sans: var(--brand-font) !important;
+  --font-display: var(--brand-font);
+  --font-body: var(--brand-font);
+}
+html, body, body *, body *::before, body *::after {
+  font-family: var(--brand-font) !important;
+  font-weight: 300 !important;
+  font-synthesis: none;
+}
+.hero-inner h1 {
+  white-space: pre-line;
+}

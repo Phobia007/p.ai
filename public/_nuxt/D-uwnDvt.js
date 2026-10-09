@@ -1,0 +1,1 @@
+import{d as t,o,c as s,t as n,u as _,_ as a}from"./B5B1E9Dr.js";const c={class:"copyright ts-a"},r=t({__name:"Copyright",setup(p){const e=new Date().getFullYear();return(i,l)=>(o(),s("p",c,"© Overworld "+n(_(e)),1))}}),u=Object.assign(a(r,[["__scopeId","data-v-c875cb46"]]),{__name:"ElementsCopyright"});export{u as _};

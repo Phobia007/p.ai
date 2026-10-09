@@ -1,0 +1,36 @@
+/* The existing world, with ivory surfaces and legible charcoal labels. */
+@font-face {
+  font-family: "Zodiak Bold";
+  src: url("./fonts/Zodiak-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+html:has(.hero-anchor) {
+  --off-white: #38313e;
+  --off-black: #eee5d2;
+  --gray: #645765;
+  --dark-gray: #5a4c60;
+}
+html:has(.hero-anchor) .loader { color: #38313e; }
+html:has(.hero-anchor) .links a:not(.is-active) { color: #514459; opacity: .8; }
+html:has(.hero-anchor) .cta-btn { border-color: #827483; }
+html:has(.hero-anchor) :focus-visible { outline-color: #685174; }
+
+/* Same font size and three lines; the user's marked upper-left region. */
+html:has(.hero-anchor) .hero-anchor { top: max(13vh, 6rem); }
+html:has(.hero-anchor) .hero { grid-column: 1 / -1; }
+html:has(.hero-anchor) .hero-inner h1 {
+  font-family: "Zodiak Bold", Georgia, serif !important;
+  font-weight: 700 !important;
+  font-style: normal;
+  letter-spacing: -0.03em;
+  word-spacing: 0.1em;
+  line-height: 1.02;
+  text-transform: none;
+  filter: url(#preman-title-deboss);
+  color: #dedbd6;
+}
+@media (max-width: 600px) {
+  html:has(.hero-anchor) .hero-anchor { top: max(13vh, 5.8rem); }
+}
