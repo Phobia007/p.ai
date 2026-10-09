@@ -27,6 +27,6 @@ Before switching Cloudflare, verify its active Git connection, production branch
 ## Browser branding update — 2026-10-09
 
 - All 31 full HTML pages and the shared runtime title template now use the exact browser tab name `preacherman`.
-- SVG, ICO, PNG, Apple touch, and manifest icons use the existing Preacherman monogram, with cache-versioned links. SVG switches ink color with the browser's light/dark appearance; PNG/ICO use a neutral light backing.
+- Browser icons were subsequently replaced with the exact original favicon from `preachermanai.com`, as requested. The inline SVG preserves its original geometry, black fill, aspect ratio and transparent background; PNG/ICO compatibility images use that same source without a background plate.
 - Browser checks passed for Home and SPA navigation to Contact, Get Preacherman, Vision, Accessories and Whitepaper. Titles remain correct after hydration and navigation.
-- Both SVG appearance modes and all manifest icon URLs passed. The original editor preview was also verified. No console/page errors were recorded.
+- The source favicon is the same authored asset in both appearance modes. The original editor preview was also updated. No console/page errors were recorded.
