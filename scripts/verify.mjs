@@ -13,6 +13,7 @@ export function verify(root){
    if(/-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|\b(?:ghp|github_pat|sb_secret)_[A-Za-z0-9_]{16,}|\bsk-(?:proj-)?[A-Za-z0-9_-]{30,}/.test(text))errors.push(`${rel}: possible private credential`);
    if(/(?:[CD]:[\\/]Users[\\/]|[CD]:[\\/]preacherman[\\/]|file:\/\/\/)/i.test(text))errors.push(`${rel}: workstation path`);
    if(rel.endsWith('.html')){htmlCount++;
+    const title=text.match(/<title>([\s\S]*?)<\/title>/i);if(title&&title[1]!=='preacherman')errors.push(`${rel}: unexpected browser title`);
     for(const match of text.matchAll(/<(?:script|link|img|source)\b[^>]*\b(?:src|href)=["']([^"']+)["']/gi)){
      const value=match[1];if(/^(?:[a-z][a-z0-9+.-]*:|\/\/|#)/i.test(value))continue;
      const pathname=decodeURIComponent(value.split(/[?#]/)[0]);if(!pathname)continue;
@@ -25,6 +26,9 @@ export function verify(root){
  for(const route of ['index.html','vision/index.html','accessories/index.html','whitepaper/index.html','contact/index.html','get-app/index.html'])assert.ok(fs.existsSync(path.join(root,route)),`Missing route ${route}`);
  const get=fs.readFileSync(path.join(root,'get-app/index.html'),'utf8');assert.ok(get.includes('Get Preacherman')&&get.includes('data-platform="website"'),'Get Preacherman content missing');
  assert.ok(fs.readFileSync(path.join(root,'contact/index.html'),'utf8').includes('Preachermanai@outlook.com'),'Contact email missing');
+ const manifest=JSON.parse(fs.readFileSync(path.join(root,'site.webmanifest'),'utf8'));assert.equal(manifest.name,'preacherman');
+ for(const icon of manifest.icons)assert.ok(fs.existsSync(path.join(root,icon.src.split('?')[0])),`Missing manifest icon ${icon.src}`);
+ assert.ok(fs.readFileSync(path.join(root,'favicon.svg'),'utf8').includes('prefers-color-scheme:dark'),'Favicon must support light and dark browser themes');
  assert.equal(errors.length,0,errors.join('\n'));const report={files:files.length,htmlRoutes:htmlCount,bytes};console.log(JSON.stringify(report));return report;
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))verify(path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../dist'));

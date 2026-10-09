@@ -20,6 +20,13 @@ This delivery uploads the current static website to GitHub. It does not publish 
 
 The browser checks open the account panel but do not submit real credentials. Live sign-in, session restoration and sign-out still need account-based acceptance. Installer URLs remain intentionally unavailable.
 
-The existing exported Nuxt/Vue bundles are preserved. Original upstream Vue source files are not part of the editor export. Imported search/social metadata and the web manifest still contain legacy branding and need a separate launch pass. The Website action still points to `https://preacherman.ai/`; choose its final product destination before placing this presentation at that domain.
+The existing exported Nuxt/Vue bundles are preserved. Original upstream Vue source files are not part of the editor export. Imported search/social metadata still needs a separate launch pass. The Website action still points to `https://preacherman.ai/`; choose its final product destination before placing this presentation at that domain.
 
 Before switching Cloudflare, verify its active Git connection, production branch, build command, domain bindings, and www redirect. The checked-in Wrangler file preserves the intended existing Worker identity; its presence alone does not establish a Git connection or prove a deployment.
+
+## Browser branding update — 2026-10-09
+
+- All 31 full HTML pages and the shared runtime title template now use the exact browser tab name `preacherman`.
+- SVG, ICO, PNG, Apple touch, and manifest icons use the existing Preacherman monogram, with cache-versioned links. SVG switches ink color with the browser's light/dark appearance; PNG/ICO use a neutral light backing.
+- Browser checks passed for Home and SPA navigation to Contact, Get Preacherman, Vision, Accessories and Whitepaper. Titles remain correct after hydration and navigation.
+- Both SVG appearance modes and all manifest icon URLs passed. The original editor preview was also verified. No console/page errors were recorded.
