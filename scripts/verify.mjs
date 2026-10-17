@@ -27,6 +27,15 @@ export function verify(root){
  for(const route of ['index.html','vision/index.html','accessories/index.html','whitepaper/index.html','contact/index.html','get-app/index.html'])assert.ok(fs.existsSync(path.join(root,route)),`Missing route ${route}`);
  const get=fs.readFileSync(path.join(root,'get-app/index.html'),'utf8');assert.ok(get.includes('Get Preacherman')&&get.includes('data-platform="website"'),'Get Preacherman content missing');
  assert.ok(fs.readFileSync(path.join(root,'contact/index.html'),'utf8').includes('Preachermanai@outlook.com'),'Contact email missing');
+ const pillars=JSON.parse(fs.readFileSync(path.join(root,'assets/pillar-catalog.json'),'utf8')).pillars;
+ assert.equal(pillars.length,6,'The six scene entries must remain available');
+ for(const pillar of pillars){
+  const detail=pillar.detail;
+  assert.ok(!detail.title&&!detail.description&&!detail.content?.length&&!detail.bannerImage&&!detail.coverImage,'Pillar details await new content');
+  const html=fs.readFileSync(path.join(root,'pillars',detail.slug.current,'index.html'),'utf8');
+  assert.ok(html.includes('pillar-detail-page')&&html.includes('To overview'),'Pillar entry and return control missing');
+  assert.ok(!/class="(?:hero|meta|content|next)"/.test(html),'Old pillar detail markup must not return');
+ }
  const manifest=JSON.parse(fs.readFileSync(path.join(root,'site.webmanifest'),'utf8'));assert.equal(manifest.name,'preacherman');
  for(const icon of manifest.icons)assert.ok(fs.existsSync(path.join(root,icon.src.split('?')[0])),`Missing manifest icon ${icon.src}`);
  const icon=fs.readFileSync(path.join(root,'favicon.svg'));
