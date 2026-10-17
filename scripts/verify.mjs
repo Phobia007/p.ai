@@ -24,8 +24,8 @@ export function verify(root){
    }
   }
  }
- for(const route of ['index.html','vision/index.html','accessories/index.html','whitepaper/index.html','contact/index.html','get-app/index.html'])assert.ok(fs.existsSync(path.join(root,route)),`Missing route ${route}`);
- const get=fs.readFileSync(path.join(root,'get-app/index.html'),'utf8');assert.ok(get.includes('Get Preacherman')&&get.includes('data-platform="website"'),'Get Preacherman content missing');
+ for(const route of ['index.html','vision/index.html','accessories/index.html','whitepaper/index.html','contact/index.html','get-preacherman/index.html','avatars/index.html'])assert.ok(fs.existsSync(path.join(root,route)),`Missing route ${route}`);
+ const get=fs.readFileSync(path.join(root,'get-preacherman/index.html'),'utf8');assert.ok(get.includes('Get Preacherman')&&get.includes('data-platform="website"'),'Get Preacherman content missing');
  assert.ok(fs.readFileSync(path.join(root,'contact/index.html'),'utf8').includes('Preachermanai@outlook.com'),'Contact email missing');
  const pillars=JSON.parse(fs.readFileSync(path.join(root,'assets/pillar-catalog.json'),'utf8')).pillars;
  assert.equal(pillars.length,6,'The six scene entries must remain available');
@@ -35,6 +35,15 @@ export function verify(root){
   const html=fs.readFileSync(path.join(root,'pillars',detail.slug.current,'index.html'),'utf8');
   assert.ok(html.includes('pillar-detail-page')&&html.includes('To overview'),'Pillar entry and return control missing');
   assert.ok(!/class="(?:hero|meta|content|next)"/.test(html),'Old pillar detail markup must not return');
+ }
+ const metadata=JSON.parse(fs.readFileSync(path.join(root,'assets/site-metadata.json'),'utf8')).pages;
+ const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
+ for(const [route,record] of Object.entries(metadata)){
+  const html=fs.readFileSync(path.join(root,route,'index.html'),'utf8');
+  assert.ok(html.includes(`rel="canonical" href="${record.canonical}"`),`Wrong canonical: ${route}`);
+  assert.ok(!/Overworld|overworldaudio\.com|Audio Direction|Technical Sound Design|A three-on-three fusion sports game/.test(html),`Template content remains: ${route}`);
+  assert.ok(!/href="\/(?:work|studio|get-app|technical-specifications)(?:\/|"|\?)/.test(html),`Legacy internal link: ${route}`);
+  assert.equal(sitemap.includes(`<loc>${record.canonical}</loc>`),!record.robots.startsWith('noindex'),`Indexing mismatch: ${route}`);
  }
  const manifest=JSON.parse(fs.readFileSync(path.join(root,'site.webmanifest'),'utf8'));assert.equal(manifest.name,'preacherman');
  for(const icon of manifest.icons)assert.ok(fs.existsSync(path.join(root,icon.src.split('?')[0])),`Missing manifest icon ${icon.src}`);

@@ -3,7 +3,7 @@
   "description": "Independent copies for the six homepage light pillars. Avatar data stays in its existing catalog.",
   "pillars": [
     {
-      "key": "alekon",
+      "key": "presence",
       "sourceProjectId": "e4cac8e9-ae98-4638-8115-8af7401febf6",
       "preview": {
         "_id": "e4cac8e9-ae98-4638-8115-8af7401febf6",
@@ -22,9 +22,9 @@
         "hidden": null,
         "slug": {
           "_type": "slug",
-          "current": "alekon"
+          "current": "presence"
         },
-        "tagline": "Complete audio package. Original score, sound design, etc.",
+        "tagline": "",
         "title": "Presence",
         "pillarKey": "presence",
         "pillarDescription": "ZIMA silhouette, traced by light."
@@ -33,7 +33,7 @@
         "_id": "pillar:e4cac8e9-ae98-4638-8115-8af7401febf6",
         "slug": {
           "_type": "slug",
-          "current": "alekon"
+          "current": "presence"
         },
         "title": "",
         "description": "",
@@ -41,7 +41,7 @@
       }
     },
     {
-      "key": "multiversus",
+      "key": "identity",
       "sourceProjectId": "7752fb62-de0d-4112-907c-395cb7ac3098",
       "preview": {
         "_id": "7752fb62-de0d-4112-907c-395cb7ac3098",
@@ -60,9 +60,9 @@
         "hidden": null,
         "slug": {
           "_type": "slug",
-          "current": "multiversus"
+          "current": "identity"
         },
-        "tagline": "Audio for one of 2024's biggest free-to-play launches.",
+        "tagline": "",
         "title": "Identity",
         "pillarKey": "identity",
         "pillarDescription": "An identity carried in a tilted nameplate."
@@ -71,7 +71,7 @@
         "_id": "pillar:7752fb62-de0d-4112-907c-395cb7ac3098",
         "slug": {
           "_type": "slug",
-          "current": "multiversus"
+          "current": "identity"
         },
         "title": "",
         "description": "",
@@ -79,7 +79,7 @@
       }
     },
     {
-      "key": "star-wars-survivor",
+      "key": "continuity",
       "sourceProjectId": "95555063-0ff5-40df-aa74-b71e55671b89",
       "preview": {
         "_id": "95555063-0ff5-40df-aa74-b71e55671b89",
@@ -98,9 +98,9 @@
         "hidden": null,
         "slug": {
           "_type": "slug",
-          "current": "star-wars-survivor"
+          "current": "continuity"
         },
-        "tagline": "Built upon Fallen Order's audio foundation.",
+        "tagline": "",
         "title": "Continuity",
         "pillarKey": "continuity",
         "pillarDescription": "Months, years, and a continuous flow of time."
@@ -109,7 +109,7 @@
         "_id": "pillar:95555063-0ff5-40df-aa74-b71e55671b89",
         "slug": {
           "_type": "slug",
-          "current": "star-wars-survivor"
+          "current": "continuity"
         },
         "title": "",
         "description": "",
@@ -117,7 +117,7 @@
       }
     },
     {
-      "key": "omega-strikers",
+      "key": "autonomy",
       "sourceProjectId": "0e47410e-247f-43a3-a6b3-1a43a5b44a49",
       "preview": {
         "_id": "0e47410e-247f-43a3-a6b3-1a43a5b44a49",
@@ -136,9 +136,9 @@
         "hidden": null,
         "slug": {
           "_type": "slug",
-          "current": "omega-strikers"
+          "current": "autonomy"
         },
-        "tagline": "A distinctive anime styled soundscape for a speedy competitive game.",
+        "tagline": "",
         "title": "Autonomy",
         "pillarKey": "autonomy",
         "pillarDescription": "A body acting under its own drive."
@@ -147,7 +147,7 @@
         "_id": "pillar:0e47410e-247f-43a3-a6b3-1a43a5b44a49",
         "slug": {
           "_type": "slug",
-          "current": "omega-strikers"
+          "current": "autonomy"
         },
         "title": "",
         "description": "",
@@ -155,7 +155,7 @@
       }
     },
     {
-      "key": "retail-mage",
+      "key": "expression",
       "sourceProjectId": "646a3639-9bc5-455a-8100-71068215aa04",
       "preview": {
         "_id": "646a3639-9bc5-455a-8100-71068215aa04",
@@ -174,9 +174,9 @@
         "hidden": null,
         "slug": {
           "_type": "slug",
-          "current": "retail-mage"
+          "current": "expression"
         },
-        "tagline": "All audio except music for a generative AI game, built in Unreal.",
+        "tagline": "",
         "title": "Expression",
         "pillarKey": "expression",
         "pillarDescription": "Voice, text, and movement in one changing form."
@@ -185,7 +185,7 @@
         "_id": "pillar:646a3639-9bc5-455a-8100-71068215aa04",
         "slug": {
           "_type": "slug",
-          "current": "retail-mage"
+          "current": "expression"
         },
         "title": "",
         "description": "",
@@ -193,7 +193,7 @@
       }
     },
     {
-      "key": "unrooted",
+      "key": "connection",
       "sourceProjectId": "d840348f-d460-417e-a188-9b3602463f51",
       "preview": {
         "_id": "d840348f-d460-417e-a188-9b3602463f51",
@@ -212,9 +212,9 @@
         "hidden": null,
         "slug": {
           "_type": "slug",
-          "current": "unrooted"
+          "current": "connection"
         },
-        "tagline": "Complete audio and original soundtrack for an indie platformer.",
+        "tagline": "",
         "title": "Connection",
         "pillarKey": "connection",
         "pillarDescription": "A point growing into a connected plane."
@@ -223,7 +223,7 @@
         "_id": "pillar:d840348f-d460-417e-a188-9b3602463f51",
         "slug": {
           "_type": "slug",
-          "current": "unrooted"
+          "current": "connection"
         },
         "title": "",
         "description": "",
