@@ -41,6 +41,11 @@ export function verify(root){
   assert.ok(!/class="(?:hero|meta|content|next)"/.test(html),'Old pillar detail markup must not return');
  }
  const metadata=JSON.parse(fs.readFileSync(path.join(root,'assets/site-metadata.json'),'utf8')).pages;
+ const shellStyles=fs.readFileSync(path.join(root,'assets/scene-appearance.css'),'utf8');
+ for(const [component,stylesheet] of [['PillarDetail.js','pillar-detail.css'],['VirtualHumanTest.js','virtual-human-test.css']]){
+  assert.ok(shellStyles.includes(`@import url('./${stylesheet}')`),`Transition styles must stay in the persistent shell: ${stylesheet}`);
+  assert.ok(!fs.readFileSync(path.join(root,'_nuxt',component),'utf8').includes('useHead'),'Page styles must not be disposed before the leave animation ends');
+ }
  const experiment=path.join(root,'experiments/virtual-human');
  assert.ok(fs.existsSync(path.join(root,'avatars/virtual-human-test/index.html')),'Virtual human detail route missing');
  assert.ok(fs.readFileSync(path.join(root,'avatars/index.html'),'utf8').indexOf('virtual human test')<fs.readFileSync(path.join(root,'avatars/index.html'),'utf8').indexOf('Cortana'),'Virtual human must be the first gallery entry');
@@ -50,6 +55,7 @@ export function verify(root){
  const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
  for(const [route,record] of Object.entries(metadata)){
   const html=fs.readFileSync(path.join(root,route,'index.html'),'utf8');
+  assert.ok(/href="(?:\/|(?:\.{1,2}\/)+)assets\/scene-appearance\.css(?:\?[^"\s]*)?"/.test(html),'All entry pages must load persistent transition styles');
   assert.ok(html.includes(`rel="canonical" href="${record.canonical}"`),`Wrong canonical: ${route}`);
   assert.ok(!/Overworld|overworldaudio\.com|Audio Direction|Technical Sound Design|A three-on-three fusion sports game/.test(html),`Template content remains: ${route}`);
   assert.ok(!/href="\/(?:work|studio|get-app|technical-specifications)(?:\/|"|\?)/.test(html),`Legacy internal link: ${route}`);

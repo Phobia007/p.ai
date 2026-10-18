@@ -1,4 +1,4 @@
-import {d as defineComponent,V as h,z as computed,h as useApp,k as useRoute,ab as useHead,v as Button} from './B5B1E9Dr.js';
+import {d as defineComponent,V as h,z as computed,h as useApp,k as useRoute,v as Button} from './B5B1E9Dr.js';
 import {a as SmoothScroll,_ as ScrollIndicator} from './BRCWKBTb.js';
 import {u as useMetadata,A as BackArrow} from './B2Em7_D3.js';
 import {pillarDetails} from './pillars-data.js';
@@ -9,7 +9,6 @@ export default defineComponent({
     const app=useApp(),route=useRoute();
     const pillar=computed(()=>pillarDetails.find(detail=>detail.slug.current===route.params.slug));
     useMetadata();
-    useHead({link:[{key:'pillar-detail-style',rel:'stylesheet',href:'/assets/pillar-detail.css'}]});
     return()=>h('div',{class:'pillar-detail'},[
       h(SmoothScroll,null,{default:()=>h('article',{
         class:['page','pillar-detail-page',{'page-visible':app.pageReady}],

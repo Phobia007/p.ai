@@ -31,7 +31,8 @@ export function applyPillarDetails(root=defaultRoot){
     indicator=indicator.replaceAll(' data-v-87cc8506','');
     const content=`<div class="pillar-detail"><!--[--><article class="page pillar-detail-page" aria-labelledby="pillar-title"><div class="pillar-detail__content" data-pillar="${escapeHtml(detail.slug.current)}"><h1 id="pillar-title" class="pillar-detail__title">${escapeHtml(detail.title)}</h1><p class="pillar-detail__lead">${escapeHtml(detail.lead)}</p>${detail.paragraphs.map(paragraph=>`<p class="pillar-detail__paragraph">${escapeHtml(paragraph)}</p>`).join('')}</div>${back}${indicator}</article><!--]--></div>`;
     html=html.replace(main[0],main[0].replace(main[1],content));
-    if(!html.includes('href="/assets/pillar-detail.css"'))html=html.replace('</head>','<link rel="stylesheet" href="/assets/pillar-detail.css"></head>');
+    // The persistent site stylesheet imports page styles before any route mounts.
+    html=html.replace(/<link\b[^>]*href="\/assets\/pillar-detail\.css"[^>]*>/g,'');
     fs.writeFileSync(htmlFile,html);
   }
   fs.writeFileSync(file('_nuxt/pillars-data.js'),'export const pillarDetails='+JSON.stringify(details)+';\n');

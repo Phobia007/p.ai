@@ -1,3 +1,7 @@
+/* Route DOM remains visible during leave animations. Keep its styles alive with the site shell. */
+@import url('./pillar-detail.css');
+@import url('./virtual-human-test.css');
+
 :root {
   --appearance-ink: #514459;
   --appearance-muted: #756c76;

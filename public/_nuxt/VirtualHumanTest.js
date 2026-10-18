@@ -1,4 +1,4 @@
-import {d as defineComponent,V as h,A as ref,h as useApp,I as onMounted,m as onBeforeUnmount,ab as useHead,v as Button} from './B5B1E9Dr.js';
+import {d as defineComponent,V as h,A as ref,h as useApp,I as onMounted,m as onBeforeUnmount,v as Button} from './B5B1E9Dr.js';
 import {u as useMetadata,A as BackArrow} from './B2Em7_D3.js';
 
 export default defineComponent({
@@ -7,7 +7,6 @@ export default defineComponent({
     const app=useApp(),frame=ref(null),ready=ref(false),playing=ref(false),pending=ref(false),error=ref('');
     let appearanceObserver=null,commandTimeout=0;
     useMetadata();
-    useHead({link:[{key:'virtual-human-style',rel:'stylesheet',href:'/assets/virtual-human-test.css'}]});
     const send=message=>frame.value?.contentWindow?.postMessage(message,window.location.origin);
     const syncAppearance=()=>send({type:'preacherman-appearance',appearance:document.documentElement.dataset.appearance==='dark'?'dark':'light'});
     function onMessage(event){
