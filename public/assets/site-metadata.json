@@ -79,6 +79,17 @@
       "image": "https://preacherman.ai/web-app-manifest-512x512.png",
       "type": "CollectionPage"
     },
+    "/avatars/virtual-human-test": {
+      "route": "/avatars/virtual-human-test",
+      "label": "virtual human test",
+      "title": "preacherman",
+      "socialTitle": "virtual human test — Preacherman",
+      "description": "An animated virtual human experiment with optional music in the Preacherman gallery.",
+      "canonical": "https://preacherman.ai/avatars/virtual-human-test",
+      "robots": "index, follow",
+      "image": "https://preacherman.ai/web-app-manifest-512x512.png",
+      "type": "WebPage"
+    },
     "/avatars/cortana": {
       "route": "/avatars/cortana",
       "label": "Cortana",

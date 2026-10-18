@@ -37,6 +37,12 @@ export function verify(root){
   assert.ok(!/class="(?:hero|meta|content|next)"/.test(html),'Old pillar detail markup must not return');
  }
  const metadata=JSON.parse(fs.readFileSync(path.join(root,'assets/site-metadata.json'),'utf8')).pages;
+ const experiment=path.join(root,'experiments/virtual-human');
+ assert.ok(fs.existsSync(path.join(root,'avatars/virtual-human-test/index.html')),'Virtual human detail route missing');
+ assert.ok(fs.readFileSync(path.join(root,'avatars/index.html'),'utf8').indexOf('virtual human test')<fs.readFileSync(path.join(root,'avatars/index.html'),'utf8').indexOf('Cortana'),'Virtual human must be the first gallery entry');
+ for(const asset of ['bridge.js','assets/custom/preacherman-branding.js','assets/custom/preacherman-logo.png','assets/custom/preacherman-wordmark.png','assets/custom/chest-track.json','assets/volumetric/luude/texturesVideo.mp4'])assert.ok(fs.existsSync(path.join(experiment,asset)),`Missing experiment content: ${asset}`);
+ const player=fs.readFileSync(path.join(experiment,'index.html'),'utf8');
+ assert.ok(!player.includes('#Stage>:not(canvas)'),'Player must not hide renderer containers');
  const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
  for(const [route,record] of Object.entries(metadata)){
   const html=fs.readFileSync(path.join(root,route,'index.html'),'utf8');

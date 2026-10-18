@@ -30,6 +30,7 @@ export function createSiteMetadata(root) {
   }
   add('/contact', 'Contact', CONTACT, false, 'ContactPage');
   add('/avatars', 'Avatars', 'Explore the Preacherman avatar gallery.', false, 'CollectionPage');
+  add('/avatars/virtual-human-test', 'virtual human test', 'An animated virtual human experiment with optional music in the Preacherman gallery.');
   for (const avatar of avatars) add(`/avatars/${avatar.key}`, avatar.title, `Explore ${avatar.title} in the Preacherman avatar gallery.`);
   for (const pillar of pillars) {
     const key = pillar.preview.pillarKey || pillar.key;
