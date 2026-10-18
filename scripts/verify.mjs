@@ -31,9 +31,13 @@ export function verify(root){
  assert.equal(pillars.length,6,'The six scene entries must remain available');
  for(const pillar of pillars){
   const detail=pillar.detail;
-  assert.ok(!detail.title&&!detail.description&&!detail.content?.length&&!detail.bannerImage&&!detail.coverImage,'Pillar details await new content');
+  assert.equal(detail.title,pillar.preview.title,'Pillar copy must match its scene entry');
+  assert.ok(detail.lead&&detail.paragraphs?.length&&detail.description,'Pillar explanation missing');
+  assert.ok(!detail.bannerImage&&!detail.coverImage,'Pillar prose must retain the shared terrain background');
   const html=fs.readFileSync(path.join(root,'pillars',detail.slug.current,'index.html'),'utf8');
   assert.ok(html.includes('pillar-detail-page')&&html.includes('To overview'),'Pillar entry and return control missing');
+  assert.ok(html.includes(detail.lead),'Pillar introduction must be present in static HTML');
+  for(const paragraph of detail.paragraphs)assert.ok(html.includes(paragraph),'Pillar explanation must be present in static HTML');
   assert.ok(!/class="(?:hero|meta|content|next)"/.test(html),'Old pillar detail markup must not return');
  }
  const metadata=JSON.parse(fs.readFileSync(path.join(root,'assets/site-metadata.json'),'utf8')).pages;
